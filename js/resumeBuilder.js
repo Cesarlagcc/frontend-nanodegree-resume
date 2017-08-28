@@ -32,14 +32,14 @@ var bio={
 	role:"Front-end Web Developer",
 	contacts:{
 		mobile:"555-555-555",
-		email:"fakeemail@gmail.com",
-		github:"fakegit.com",
+		email:"guitarshredder92@yahoo.com",
+		github:"Cesarlagcc",
 		twitter:"Twitter.com",
 		location:"New York City"
 	},
-	welcomeMessage:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellen",
+	welcomeMessage:"Welcome, My Name is Cesar Andon and I am an aspiring Front-end Web Developer.",
 	skills:[
-		"HTML5","CSS3","JQuery"
+		"HTML5","CSS3","JQuery","Photoshop"
 	],
 	bioPic: "images/fry.jpg"
 }
@@ -92,6 +92,8 @@ if(bio.skills.length>0){
 	formattedSkill=HTMLskills.replace("%data%",bio.skills[1]);
 	$("#skills").append(formattedSkill);
 	formattedSkill=HTMLskills.replace("%data%",bio.skills[2]);
+	$("#skills").append(formattedSkill);
+	formattedSkill=HTMLskills.replace("%data%",bio.skills[3]);
 	$("#skills").append(formattedSkill);
 };
 
