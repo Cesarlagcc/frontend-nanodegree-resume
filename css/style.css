@@ -121,6 +121,7 @@ a {
   background-color: #f3f3f3;
   padding-bottom: 10px;
   clear: both;
+  
 }
 
 .dark-gray {
@@ -130,6 +131,7 @@ a {
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
+
 }
 
 .flex-box {
