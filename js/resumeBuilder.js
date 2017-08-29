@@ -39,7 +39,7 @@ var bio = {
         "HTML5", "CSS3", "JQuery", "Photoshop"
     ],
     bioPic: "images/fry.jpg"
-}
+};
 
 //Starting from here is the top of my basic information 
 var myMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
@@ -105,7 +105,7 @@ var work = {
         "description": "Assisted lead Web Designer in modifying and creating brand new content for client's websites."
 
     }]
-}
+};
 
 //this is the education section begins, the following is an array.
 var education = {
@@ -185,7 +185,7 @@ var projects = {
             "image": "images/fry.jpg"
         }
     ]
-}
+};
 
 //The code below is the work experience section of the portfolio page.
 var job = '';
