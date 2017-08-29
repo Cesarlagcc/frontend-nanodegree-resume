@@ -9,9 +9,9 @@ part and put in my name.
 
 I then appended it to the header tag through html. 
 */
-var name = "Cesar Andon";
+var firstName = "Cesar Andon";
 
-var formattedName = HTMLheaderName.replace("%data%", name);
+var formattedName = HTMLheaderName.replace("%data%", firstName);
 
 var role = "Front-end Web Developer";
 var formattedRole = HTMLheaderRole.replace("%data%", role);
@@ -59,7 +59,7 @@ $("#topContacts").append(locationInfo);
 //and it ends here
 
 //this is the code for the fry photo
-var mainPic = HTMLbioPic.replace("%data%", bio["bioPic"]);
+var mainPic = HTMLbioPic.replace("%data%", bio.bioPic);
 $("#header").append(mainPic);
 //fry photo ends here
 
@@ -92,7 +92,7 @@ if (bio.skills.length > 0) {
     $("#skills").append(formattedSkill);
     formattedSkill = HTMLskills.replace("%data%", bio.skills[3]);
     $("#skills").append(formattedSkill);
-};
+}
 
 
 //this is the part that deals with education and work. The following below is a job array in a work object
@@ -188,6 +188,8 @@ var projects = {
 }
 
 //The code below is the work experience section of the portfolio page.
+var job = '';
+
 function displayWork() {
     for (job in work.jobs) {
         $("#workExperience").append(HTMLworkStart);
@@ -232,6 +234,7 @@ function inName(name) {
 
 
 //This part of the code is a encapulating function that inputs all of the projects onto the html document. 
+var project = "";
 projects.display = function() {
     for (project in projects.finalProj) {
         $("#projects").append(HTMLprojectStart);
@@ -245,12 +248,12 @@ projects.display = function() {
         var formattedProjDesc = HTMLprojectDescription.replace("%data%", projects.finalProj[project].description);
         $(".project-entry:last").append(formattedProjDesc);
 
-        if (projects.finalProj[project].image.length > 0) { //images is not appearing.
-            for (images in projects.finalProj[project].images) {
-                var formattedImage = HTMLprojectImage.replace("%data%", projects.finalProj[project].image[images]);
-                $(".project-entry:last").append(formattedImage);
-            }
-        }
+        // if(projects.finalProj[project].image.length>0){//images is not appearing.
+        // 	for(images in projects.finalProj[project].images){
+        // 		var formattedImage=HTMLprojectImage.replace("%data%",projects.finalProj[project].image[images]);
+        // 		$(".project-entry:last").append(formattedImage);
+        // 	}
+        // }
 
     }
 };
