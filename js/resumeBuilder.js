@@ -98,7 +98,7 @@ var projects = {
             'title': 'The Abduction',
             'dates': 'November 2016',
             'description': 'Photoshop based imaged created for my final project, using a sci-fi theme for the setting.',
-            'images': ['images/Photoshop.png']
+            'images': ['images/photoshop.png']
         },
     ],
     display: function() {
