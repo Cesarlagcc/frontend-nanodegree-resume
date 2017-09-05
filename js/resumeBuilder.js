@@ -38,7 +38,7 @@ var bio = {
         var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 
         $('#header').prepend(formattedName + formattedRole);
-        $('#topContacts').append(formattedMobile + formattedEmail +
+        $('#topContacts, #footerContacts').append(formattedMobile + formattedEmail +
             formattedGithub + formattedTwitter + formattedLocation);
         $('#header').append(formattedBioPic);
         $('#header').append(formattedWelcomeMessage);
